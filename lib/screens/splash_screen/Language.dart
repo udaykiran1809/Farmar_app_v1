@@ -20,7 +20,7 @@ class _LanguageState extends State<Language> {
             style: TextStyle(fontSize: 30),
           ),
           Padding(padding: EdgeInsets.all(10.0)),
-          w(
+          Row(
             children: [
               Expanded(
                 child: GestureDetector(
@@ -32,22 +32,25 @@ class _LanguageState extends State<Language> {
                     onTap: () {},
                     child: Image(image: AssetImage('assets/images/Tam.png'))),
               ),
-            Row(
-            children: [
-              Expanded(
-                child: GestureDetector(
-                    onTap: () {},
-                    child: Image(image: AssetImage('assets/images/tel.png'))),
-              ),
-              Expanded(
-                child: GestureDetector(
-                    onTap: () {},
-                    child: Image(image: AssetImage('assets/images/Eng.png'))),
-              ),
-            ],
+            ]
           ),
-          Ro],
-          ),
+
+          Row(
+              children: [
+                  Expanded(
+                    child: GestureDetector(
+                        onTap: () {},
+                        child:
+                            Image(image: AssetImage('assets/images/tel.png'))),
+                  ),
+                  Expanded(
+                    child: GestureDetector(
+                        onTap: () {},
+                        child:
+                            Image(image: AssetImage('assets/images/Eng.png'))),
+                  ),
+                ],
+              ),
           Row(
             children: [
               Expanded(
